@@ -8,53 +8,31 @@ body {
   }
 header {
     text-align: center;
-    img-size: auto;
+    img-size: stretch;
 
 }
 h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: comic-sans;
     font-weight: bold;
     text-align: center;
     background-color: blue;
     text-color: white;
 }
 h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: comic-sans;
     font-weight: bold;
     text-align: center;
     background-color: blue;
     text-color: white;
 }
 h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: comic-sans;
     font-weight: bold;
     text-align: center;
     background-color: dark blue;
     text-color: white;
 }
     
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16 px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111111;
-  }
+
 
 
