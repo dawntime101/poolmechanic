@@ -16,24 +16,24 @@ h1 {
     font-weight: bold;
     text-align: center;
     background-color: blue;
-    text-color: white;
+    color: white;
 }
 h2 {
     font-family: comic-sans;
     font-weight: bold;
     text-align: center;
     background-color: blue;
-    text-color: white;
+    color: white;
 }
 h3 {
     font-family: comic-sans;
     font-weight: bold;
     text-align: center;
     background-color: dark blue;
-    text-color: white;
+    color: white;
 }
-p{
-    text-color: white;
+p {
+    color: white;
     background-color: blue;
 }
     
