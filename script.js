@@ -10,6 +10,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
+// Water Ripple Effect
+function createRipple() {
+    const ripple = document.createElement('div');
+    ripple.classList.add('water-ripple');
+    document.body.appendChild(ripple);
+    
+    // Randomly position and animate
+    ripple.style.left = `${Math.random() * 100}%`;
+    ripple.style.top = `${Math.random() * 100}%`;
+    
+    setTimeout(() => {
+        ripple.remove();
+    }, 3000);
+}
+
+// Create ripples periodically
+setInterval(createRipple, 2000);
         });
     });
 });
