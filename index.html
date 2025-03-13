@@ -3,99 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Austin Pool Mechanic - Pool & Hot Tub Services</title>
+    <title>Austin Pool Mechanic - Professional Pool Services</title>
+    
+    <!-- Font Imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
+    <div class="background-overlay"></div>
+    
     <header>
-        <nav>
+        <div class="container">
             <div class="logo">
                 <img src="pool-logo.png" alt="Austin Pool Mechanic Logo">
                 <h1>Austin Pool Mechanic</h1>
             </div>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#quote">Get a Quote</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#quote">Get a Quote</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section id="hero">
-            <div class="hero-content">
-                <h2>Professional Pool & Hot Tub Maintenance</h2>
-                <p>Keeping Austin's Pools Cool and Clean Since 2010</p>
-                <a href="#quote" class="cta-button">Book Service Now</a>
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Professional Pool & Spa Maintenance</h2>
+                    <p>Keeping Austin's Pools Crystal Clear Since 2010</p>
+                    <a href="#quote" class="cta-button">Book Service Now</a>
+                </div>
             </div>
         </section>
 
         <section id="services">
-            <h2>Our Services</h2>
-            <div class="service-grid">
-                <div class="service-card">
-                    <i class="fas fa-search"></i>
-                    <h3>Pool & Spa Diagnosis</h3>
-                    <p>Comprehensive inspection and problem identification for pools and hot tubs</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-tools"></i>
-                    <h3>Maintenance & Repair</h3>
-                    <p>Expert repair and regular maintenance for optimal pool and spa performance</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-water"></i>
-                    <h3>Chemical Balance</h3>
-                    <p>Precise water chemistry management to ensure safety and clarity</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-pump"></i>
-                    <h3>Equipment Service</h3>
-                    <p>Repair and replacement of pumps, filters, and other pool equipment</p>
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Pool Diagnosis</h3>
+                        <p>Comprehensive inspection and problem identification</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Maintenance & Repair</h3>
+                        <p>Expert repair and regular maintenance services</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3>Chemical Balance</h3>
+                        <p>Precise water chemistry management</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-pump"></i>
+                        </div>
+                        <h3>Equipment Service</h3>
+                        <p>Repair and replacement of pool equipment</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="quote">
-            <div class="quote-container">
-                <h2>Request a Service</h2>
-                <form id="service-form">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="tel" placeholder="Phone Number" required>
-                    <select>
-                        <option>Pool Diagnosis</option>
-                        <option>Maintenance</option>
-                        <option>Repair</option>
-                        <option>Other</option>
-                    </select>
-                    <textarea placeholder="Describe your pool or spa issue"></textarea>
-                    <button type="submit">Submit Request</button>
-                </form>
+            <div class="container">
+                <div class="quote-wrapper">
+                    <h2>Request a Service</h2>
+                    <form id="service-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                            <select required>
+                                <option value="">Select Service Type</option>
+                                <option>Pool Diagnosis</option>
+                                <option>Maintenance</option>
+                                <option>Repair</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <textarea placeholder="Describe your pool or spa issue" required></textarea>
+                        <button type="submit">Submit Request</button>
+                    </form>
+                </div>
             </div>
         </section>
 
         <section id="contact">
-            <div class="contact-info">
-                <h2>Contact Austin Pool Mechanic</h2>
-                <div class="contact-details">
-                    <p><i class="fas fa-phone"></i> (512) 555-POOL</p>
-                    <p><i class="fas fa-envelope"></i> service@austinpoolmechanic.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Austin, TX and surrounding areas</p>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Contact Us</h2>
+                        <div class="contact-details">
+                            <p><i class="fas fa-phone"></i> (512) 555-POOL</p>
+                            <p><i class="fas fa-envelope"></i> service@austinpoolmechanic.com</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Austin, TX and Surrounding Areas</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Austin Pool Mechanic. All Rights Reserved.</p>
+        <div class="container">
+            <p>&copy; 2023 Austin Pool Mechanic. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
