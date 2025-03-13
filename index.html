@@ -1,68 +1,48 @@
-<!doctype html>
-<html>
-  <head>
-    <!-- Page setup -->
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Austin Pool Mechanic</title>
-    <meta name="description" content="Pool and Hot Tub Mechanic of Austin, TX">
-    <meta name="author" content="Native Austinite">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/png" href="favicon.png">
-  
-    <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
-    <!-- Custom styles -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
-
-    <!-- jQuery --script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
-
-    <!-Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-  </head>
-  
-  <body>
-
-    <header id="header">
-      <img src="logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pool Mechanic Services</h1>
+        <p>Expert pool maintenance and repair in the Greater Austin Area</p>
     </header>
-    
-          
-            <h2>About</h2>
-            <h3>Your Austin Hot Tub Repair Guy!</h3>
-    <div class= "text">
-            <p>Austin Pool Mechanic services pools and hot tubs in the Greater Austin Area. Specializing in repairing pool and hot tub mechanical issues that you need a pro for.
-              When it comes to scheduling, the most efficient way to request service is to simply follow the steps below.</p>
-
-              <h2>Scheduling Process</h2>
-             <h3>It's super easy!</h3>
-              <p>Step One: Gather information such as the hot tub make and model number, year, and any relevant photos.<br>
-                 Step Two: Send this information, along with a brief description of the problem, and a phone number to rickmull197@gmail.com<br>
-                Step Three: Expect us to contact you within 24 hours to schedule service.
-              </p>
-   
-    </div>
-         
-          
-            <h2>Contact</h2>
-            <h3>Give us a call, or email us to steamline faster serviec!</h3>
-            <p>
-             Phone: (512) 799-8878<br>
-             Email: rickmull197@gmail.com<br>
-                 Greater Austin Area<br>
-          South Austin, Buda, Kyle, Bee Cave, Lakeway, and more
-                  
-            </p>
-
-    <footer>  
-      Austin Pool Mechanic 
-    </footer>
-    
-    <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
-    
-  </body>
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Pool and hot tub maintenance</li>
+            <li>Pool and hot tub equipment repair and replacement</li>
+            <li>Leak detection and repair</li>
+            <li>Pool inspection and diagnostic</li>
+        </ul>
+    </section>
+    <section id="diagnostic-cost">
+        <h2>Diagnostic Cost</h2>
+        <p>$100 - $200 (depending on the complexity of the issue)</p>
+    </section>
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>Email: <a href="mailto:austinpoolmechanic@gmail.com">austinpoolmechanic@gmail.com</a></p>
+        <p>Phone: <a href="tel:512-799-8878">512-799-8878</a></p>
+    </section>
+    <section id="submission-form">
+        <h2>Submit a Request</h2>
+        <form id="submission-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
 </html>
