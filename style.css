@@ -51,7 +51,7 @@ nav ul li a {
 
 #hero {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('pool-background.jpg') no-repeat center center;
+                url('poolback.png') no-repeat center center;
     background-size: cover;
     color: white;
     text-align: center;
