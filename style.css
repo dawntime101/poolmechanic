@@ -1,42 +1,87 @@
 
 body {
-    background-image: url('PoolBG.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    text-align: center;
-  }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    img-size: stretch;
+}
 
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
-h1 {
-    font-family: comic-sans;
-    font-weight: bold;
-    text-align: center;
-    background-color: blue;
-    color: white;
-}
-h2 {
-    font-family: comic-sans;
-    font-weight: bold;
-    text-align: center;
-    background-color: blue;
-    color: white;
-}
-h3 {
-    font-family: comic-sans;
-    font-weight: bold;
-    text-align: center;
-    background-color: dark blue;
-    color: white;
-}
-p {
-    color: white;
-    background-color: blue;
-}
-    
 
+section {
+    padding: 20px;
+}
 
+#services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+#services li {
+    margin-bottom: 10px;
+}
+
+#diagnostic-cost {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#contact {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#submission-form {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#submission-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#submission-form input, #submission-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+#submission-form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submission-form button[type="submit"]:hover {
+    background-color: #444;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    header {
+        padding: 10px;
+    }
+    section {
+        padding: 10px;
+    }
+}
