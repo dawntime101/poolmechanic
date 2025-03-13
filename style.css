@@ -41,7 +41,7 @@ main {
 #hero {
     padding-top: 100px; /* Increased to ensure content is visible */
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('poolbackground.png') no-repeat center center;
+                url('poolback.png') no-repeat center center;
     background-size: cover;
     min-height: 500px; /* Ensure minimum height */
 }
