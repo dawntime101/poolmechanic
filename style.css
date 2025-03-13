@@ -1,19 +1,28 @@
-/* Header Styles */
-header {
-    position: fixed;
-    width: 100%;
-    background-color: rgba(255,255,255,0.9);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    z-index: 1000;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header-content {
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
     display: flex;
-    justify-content: space-between; /* Changed from column to space-between */
-    align-items: center; /* Vertically center items */
-    max-width: 1200px; /* Added max-width */
-    margin: 0 auto; /* Center the header content */
-    padding: 15px 20px; /* Added horizontal padding */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo {
@@ -22,46 +31,88 @@ header {
 }
 
 .logo img {
-    height: 50px; /* Added to control logo size */
+    height: 50px;
     margin-right: 15px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 30px; /* Space between nav items */
 }
 
-/* Add some spacing to the main content to prevent overlap with fixed header */
-main {
-    padding-top: 80px; /* Adjust based on your header height */
+nav ul li {
+    margin-left: 20px;
 }
 
-/* Hero section to ensure it starts below the header */
+nav ul li a {
+    text-decoration: none;
+    color: #2196F3;
+}
+
 #hero {
-    padding-top: 100px; /* Increased to ensure content is visible */
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('poolback.png') no-repeat center center;
+                url('pool-background.jpg') no-repeat center center;
     background-size: cover;
-    min-height: 500px; /* Ensure minimum height */
+    color: white;
+    text-align: center;
+    padding: 100px 0;
 }
 
-/* Responsive Adjustments */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.service-card {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+#quote, #contact {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#service-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#service-form input,
+#service-form select,
+#service-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.contact-info, .social-links {
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f4f4f4;
+}
+
 @media (max-width: 768px) {
-    .header-content {
+    header {
         flex-direction: column;
         text-align: center;
-    }
-
-    .logo {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 15px;
     }
 
     nav ul {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
     }
 }
