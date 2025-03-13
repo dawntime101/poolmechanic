@@ -17,7 +17,7 @@ body {
         rgba(33, 150, 243, 0.7), 
         rgba(0, 188, 212, 0.7)
     ), 
-    url('pool-hero-background.jpg') no-repeat center center;
+    url('poolback.png') no-repeat center center;
     background-size: cover;
     position: relative;
     overflow: hidden;
