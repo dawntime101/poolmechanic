@@ -1,87 +1,178 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f4f4f4;
+}
 
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
-header h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
 }
 
-section {
-    padding: 20px;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-#services ul {
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
-#services li {
-    margin-bottom: 10px;
+nav ul li {
+    margin-left: 20px;
 }
 
-#diagnostic-cost {
-    background-color: #f7f7f7;
-    padding: 20px;
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+#hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('pool-background.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#services {
+    padding: 50px 5%;
+    background-color: var(--background-color);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+#quote {
+    background-color: white;
+    padding: 50px 5%;
+}
+
+#service-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#service-form input, 
+#service-form select, 
+#service-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
     border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#service-form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
 }
 
 #contact {
-    background-color: #f7f7f7;
-    padding: 20px;
-    border: 1px solid #ddd;
+    background-color: var(--background-color);
+    padding: 50px 5%;
+    text-align: center;
 }
 
-#submission-form {
-    background-color: #f7f7f7;
-    padding: 20px;
-    border: 1px solid #ddd;
+.contact-details {
+    margin: 20px 0;
 }
 
-#submission-form label {
-    display: block;
-    margin-bottom: 10px;
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-#submission-form input, #submission-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
+.social-icon {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
-#submission-form button[type="submit"] {
+footer {
     background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-#submission-form button[type="submit"]:hover {
-    background-color: #444;
-}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
 
-@media only screen and (max-width: 768px) {
-    body {
-        font-size: 16px;
+    nav ul {
+        margin-top: 20px;
     }
-    header {
-        padding: 10px;
-    }
-    section {
-        padding: 10px;
+
+    .service-grid {
+        grid-template-columns: 1fr;
     }
 }
