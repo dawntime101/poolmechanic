@@ -1,25 +1,19 @@
+HTML
+
+Collapse
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Austin Pool Mechanic - Professional Pool Services</title>
-    
-    <!-- Font Imports -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
+    <title>Austin Pool Mechanic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="background-overlay"></div>
-    
-    <header>
     <div class="container">
-        <div class="header-content">
+        <header>
             <div class="logo">
                 <img src="poollogo.png" alt="Austin Pool Mechanic Logo">
                 <h1>Austin Pool Mechanic</h1>
@@ -31,109 +25,77 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        </div>
-    </div>
-</header>
+        </header>
 
-    <main>
-        <section id="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h2>Professional Pool & Spa Maintenance</h2>
-                    <p>Keeping Austin's Pools Crystal Clear Since 2010</p>
-                    <a href="#quote" class="cta-button">Book Service Now</a>
-                </div>
-            </div>
-        </section>
+        <main>
+            <section id="hero">
+                <h2>Professional Pool & Spa Maintenance</h2>
+                <p>Keeping Austin's Pools Crystal Clear</p>
+                <a href="#quote" class="cta-button">Book Service</a>
+            </section>
 
-        <section id="services">
-            <div class="container">
-                <h2 class="section-title">Our Services</h2>
+            <section id="services">
+                <h2>Our Services</h2>
                 <div class="service-grid">
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
+                        <i class="fas fa-search"></i>
                         <h3>Pool Diagnosis</h3>
                         <p>Comprehensive inspection and problem identification</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
+                        <i class="fas fa-tools"></i>
                         <h3>Maintenance & Repair</h3>
                         <p>Expert repair and regular maintenance services</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-water"></i>
-                        </div>
+                        <i class="fas fa-water"></i>
                         <h3>Chemical Balance</h3>
                         <p>Precise water chemistry management</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-pump"></i>
-                        </div>
+                        <i class="fas fa-pump"></i>
                         <h3>Equipment Service</h3>
                         <p>Repair and replacement of pool equipment</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="quote">
-            <div class="container">
-                <div class="quote-wrapper">
-                    <h2>Request a Service</h2>
-                    <form id="service-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="email" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="Phone Number" required>
-                            <select required>
-                                <option value="">Select Service Type</option>
-                                <option>Pool Diagnosis</option>
-                                <option>Maintenance</option>
-                                <option>Repair</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                        <textarea placeholder="Describe your pool or spa issue" required></textarea>
-                        <button type="submit">Submit Request</button>
-                    </form>
+            <section id="quote">
+                <h2>Request a Service</h2>
+                <form id="service-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <select required>
+                        <option value="">Select Service</option>
+                        <option>Pool Diagnosis</option>
+                        <option>Maintenance</option>
+                        <option>Repair</option>
+                    </select>
+                    <textarea placeholder="Describe your issue" required></textarea>
+                    <button type="submit">Submit Request</button>
+                </form>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> (512) 555-POOL</p>
+                    <p><i class="fas fa-envelope"></i> service@austinpoolmechanic.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Austin, TX</p>
                 </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="container">
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h2>Contact Us</h2>
-                        <div class="contact-details">
-                            <p><i class="fas fa-phone"></i> (512) 555-POOL</p>
-                            <p><i class="fas fa-envelope"></i> service@austinpoolmechanic.com</p>
-                            <p><i class="fas fa-map-marker-alt"></i> Austin, TX and Surrounding Areas</p>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Austin Pool Mechanic. All Rights Reserved.</p>
-        </div>
-    </footer>
+        <footer>
+            <p>&copy; 2023 Austin Pool Mechanic</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
