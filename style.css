@@ -1,7 +1,7 @@
 :root {
     --primary-blue: #2196F3;
     --secondary-blue: #00BCD4;
-    --light-blue: #044e83;
+    --dark-blue: #044e83;
     --text-color: #0c0c0c;
     --white: #FFFFFF;
 }
@@ -17,7 +17,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     position: relative;
-    background-color: var(--light-blue);
+    background-color: var(--dark-blue);
 }
 
 .container {
