@@ -84,24 +84,25 @@
             <div class="container">
                 <div class="quote-wrapper">
                     <h2>Request a Service</h2>
-                    <form id="service-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="email" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="Phone Number" required>
-                            <select required>
-                                <option value="">Select Service Type</option>
-                                <option>Pool Diagnosis</option>
-                                <option>Maintenance</option>
-                                <option>Repair</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                        <textarea placeholder="Describe your pool or spa issue" required></textarea>
-                        <button type="submit">Submit Request</button>
-                    </form>
+                    <form id="service-form" action="https://formspree.io/f/mwvvzvry" method="POST">
+    <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Email Address" required>
+    </div>
+    <div class="form-group">
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <select name="service_type" required>
+            <option value="">Select Service Type</option>
+            <option>Pool Diagnosis</option>
+            <option>Maintenance</option>
+            <option>Repair</option>
+            <option>Other</option>
+        </select>
+    </div>
+    <textarea name="message" placeholder="Describe your pool or spa issue" required></textarea>
+    <button type="submit">Submit Request</button>
+    <input type="text" name="_gotcha" style="display:none" />
+</form>
                 </div>
             </div>
         </section>
