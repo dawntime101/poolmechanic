@@ -200,22 +200,13 @@ nav ul li a:hover {
 }
 
 /* Contact Section */
-#contact {
+contact {
     background-color: var(--light-blue);
     padding: 100px 0;
-}
-
-.contact-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.contact-details {
     margin-top: 20px;
-}
-
-.contact-details p {
     margin-bottom: 10px;
 }
 
@@ -224,7 +215,7 @@ nav ul li a:hover {
     gap: 20px;
 }
 
-.social-icon {
+//**.social-icon {
     color: var(--primary-blue);
     font-size: 1.5rem;
     text-decoration: none;
@@ -234,12 +225,9 @@ nav ul li a:hover {
 .social-icon:hover {
     color: var(--secondary-blue);
 }
-
-contact {
-    background-color: var(--secondary-blue);
-    color: white;
-}
+//**
 /* Footer */
+
 footer {
     background-color: var(--primary-blue);
     color: white;
