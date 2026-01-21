@@ -200,14 +200,32 @@ nav ul li a:hover {
 }
 
 /* Contact Section */
-contact {
-    background-color: var(--light-blue);
-    padding: 100px 0;
+/* Contact Section - FIXED */
+#contact {
+    background-color: var(--dark-blue); /* Use dark blue background */
+    padding: 80px 0;
+    color: white; /* Makes all text in this section white */
+}
+
+#contact h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contact-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+}
+
+.contact-details p {
     margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-details i {
+    margin-right: 10px;
+    color: var(--secondary-blue); /* Icons stay blue to pop against white text */
 }
 
 .social-links {
@@ -215,17 +233,25 @@ contact {
     gap: 20px;
 }
 
-//**.social-icon {
-    color: var(--primary-blue);
-    font-size: 1.5rem;
-    text-decoration: none;
+.social-icon {
+    color: white; /* Icons turn white */
+    font-size: 1.8rem;
     transition: color 0.3s ease;
 }
 
 .social-icon:hover {
     color: var(--secondary-blue);
 }
-//**
+
+/* Fix for Service Cards (removing the extra water icon div error) */
+.service-card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    color: var(--text-color); /* Ensure service text stays dark */
+}
 /* Footer */
 
 footer {
